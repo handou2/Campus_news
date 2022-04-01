@@ -1,40 +1,43 @@
-# 主要功能：
 
-### 首页--显示用户最常浏览/用户点赞最多
+## What technology did we use？
+#### react+js+react hook
+## What is our main function?？
 
-------新闻分类(柱状图)
+### Home page--display the most frequently viewed by users/the most liked by users
 
-------个人新闻分类(饼状图)
+------News Category (Bar Chart)
 
-### 用户管理
+------Personal news category (pie chart)
 
-------用户列表：添加用户/管理用户状态(开关)/删除用户/编辑用户
+### User Management
 
-### 权限管理
+------User list: add user/manage user status (switch)/delete user/edit user
 
-------角色列表：删除角色/修改角色权限
+### authority management
 
-------权限列表：删除权限/管理权限状态(开关)
+------Role List: Delete Role/Modify Role Permissions
 
-### 新闻管理
+------Permission list: delete permission/manage permission status (switch)
 
-------撰写新闻：填写新闻基本信息
+### News management
 
-------草稿箱：撰写新闻后可保存草稿箱
+------Writing news: fill in basic news information
 
-------新闻分类：显示新闻分类
+------Drafts: You can save drafts after writing news
 
-### 审核管理
+------News Category: Display news categories
 
-------审核新闻：可通过或驳回新闻
+### Audit management
 
-------审核列表：可撤销新闻
+------Moderated news: news can be passed or dismissed
 
-### 发布管理
+------Review List: Revocable News
 
-------待发布
+### Release management
 
-------已发布：可下线新闻
+------to be published
 
-------已下线：可删除新闻
+------Published: Offline News
+
+------Offline: Can delete news
 
