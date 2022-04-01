@@ -1,6 +1,6 @@
 
 ## What technology did we use？
-#### react+js+react hook
+#### react+js+react hook+Antd
 ## What is our main function?？
 
 ### Home page--display the most frequently viewed by users/the most liked by users
