@@ -41,3 +41,5 @@
 
 ------Offline: Can delete news
 
+db.json文件模拟的数据哟
+建议用json-server开启
