@@ -43,3 +43,6 @@
 
 db.json文件模拟的数据哟
 建议用json-server开启
+找到db.json文件
+cmd开启
+json-server --watch ./db.json --port 5000
