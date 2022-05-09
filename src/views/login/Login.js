@@ -3,6 +3,7 @@ import { Form, Button, Input, message } from 'antd'
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import './Login.css'
 import axios from 'axios'
+import ParticlesBg from 'particles-bg'
 export default function Login(props) {
 
     const onFinish = (values) => {
@@ -18,8 +19,34 @@ export default function Login(props) {
             }
         })
     }
+    let config = {
+        num: [4, 7],
+        rps: 0.1,
+        radius: [5, 40],
+        life: [1.5, 3],
+        v: [2, 3],
+        tha: [-40, 40],
+        // body: "./img/icon.png", // Whether to render pictures
+        // rotate: [0, 20],
+        alpha: [0.6, 0],
+        scale: [1, 0.1],
+        position: "center", // all or center or {x:1,y:1,width:100,height:100}
+        color: ["random", "#ff0000"],
+        cross: "dead", // cross or bround
+        random: 15,  // or null,
+        g: 5,    // gravity
+        // f: [2, -1], // force
+        onParticleUpdate: (ctx, particle) => {
+            ctx.beginPath();
+            ctx.rect(particle.p.x, particle.p.y, particle.radius * 2, particle.radius * 2);
+            ctx.fillStyle = particle.color;
+            ctx.fill();
+            ctx.closePath();
+        }
+      };
     return (
-        <div style={{ background: 'rgb(35, 39, 65)', height: "100%",overflow:'hidden' }}>
+        <div style={{  height: "100%",overflow:'hidden' }}>
+            <ParticlesBg type="circle" bg={true} config={config}/>
             <div className="formContainer">
                 <div className="logintitle">校园新闻发布管理系统</div>
                 <Form

@@ -90,6 +90,7 @@ export default function UserList() {
             title: "用户状态",
             dataIndex: 'roleState',
             render: (roleState, item) => {
+                //roleState控制开关状态
                 return <Switch checked={roleState} disabled={item.default} onChange={()=>handleChange(item)}></Switch>
             }
         },

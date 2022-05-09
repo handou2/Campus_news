@@ -2,7 +2,9 @@ import React, { forwardRef,useEffect,useState } from 'react'
 import {Form,Input,Select} from 'antd'
 const {Option}  = Select
 const UserForm = forwardRef((props,ref) => {
+    //选择角色后区域是否禁用
     const [isDisabled, setisDisabled] = useState(false)
+
     
     useEffect(()=>{
         setisDisabled(props.isUpdateDisabled)
